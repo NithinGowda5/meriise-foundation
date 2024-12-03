@@ -112,11 +112,11 @@ q {
     box-sizing: border-box;
     padding: 1%;
     text-align: center;
-    background-color: black;
+    background-color: white;
     padding-bottom: 0;
 }
 .h-txt {
-    color: #fafdff;
+    color: black;
     font-family: "Lato", sans-serif;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -126,7 +126,7 @@ q {
 
 .h-txt2 {
     font-family: "Do Hyeon", sans-serif;
-    color: #dadada;
+    color: black;
     font-weight: bolder;
     letter-spacing: 5px;
     word-spacing: 3px;
