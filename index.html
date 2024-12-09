@@ -581,7 +581,7 @@
                 </li>
                 <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[150px] bg-white text-blue-600"
                     id="box2" onclick="dropdown()">
-                    <div class="a1 mx-2"><a href="aboutmeriise.html">About us</a></div>
+                    <div class="a1 mx-2"><a href="aboutmeriise.html">About ME-RIISE</a></div>
                     <div class=" mx-2"><a href="infrastructure.html">Infrastructure</a></div>
                     <div class="a1 mx-2"><a href="team.html">Team ME-RIISE</a></div>
                     <div class="a1 mx-2"><a href="ourAchivements.html">Achievements</a></div>
@@ -590,7 +590,22 @@
                 </li>
             </div>
             <!-- <li class="a1 mx-2"><a href="aboutmeriise.html">About us</a></li> -->
-            <li class="a1 mx-2"><a href="#">Wings of ME-RIISE</a></li>
+            <div class="flex ml-2">
+                <li class="relative" onclick="toggleFunction3(event)" id="click">
+                    <a href="#" class="hover:text-blue-600">Wings</a>
+                    <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
+
+                </li>
+                <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[150px] bg-white text-blue-600"
+                    id="box3" onclick="dropdown()">
+                    <div class="a1 mx-2"><a href="startups.html">Start Ups</a></div>
+                    <div class=" mx-2"><a href="infrastructure.html">Pragyatha</a></div>
+                    <div class="a1 mx-2"><a href="iic.html">MoE</a></div>
+                    <div class="a1 mx-2"><a href="nain.html">NAIN</a></div>
+                    <div class="a1 mx-2 "><a href="uba.html">UBA</a></div>
+
+                </li>
+            </div>
             <li class="a1 mx-2"><a href="#">Events</a></li>
             <li class="a1 mx-2"><a href="#">Contact us</a></li>
             
@@ -1698,6 +1713,22 @@
             box2.classList.toggle('hidden');
             if (!box2.classList.contains('hidden')) {
                 box.classList.add('hidden');
+            }
+
+            const icons2 = document.getElementById('icons2'); // Select the icon element
+            const iconName = icons2.getAttribute('name');
+            icons2.setAttribute('name', iconName === 'caret-down-outline' ? 'caret-up-outline' : 'caret-down-outline');
+        }
+
+
+        function toggleFunction3(event) {
+            event.stopPropagation(); // prevent the event from bubbling up to the document
+            const box3 = document.getElementById('box3');
+            const box2 = document.getElementById('box2');
+            const box = document.getElementById('box');
+            box3.classList.toggle('hidden');
+            if (!box2.classList.contains('hidden')) {
+                box3.classList.add('hidden');
             }
 
             const icons2 = document.getElementById('icons2'); // Select the icon element
