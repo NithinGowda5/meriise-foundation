@@ -172,7 +172,7 @@ a {
   background-color: white;
   color: black;
   font-weight: var(--font-semi-bold);
-  padding: 1.25rem 1rem;
+  padding: 1.25rem 1.25rem;
 
   display: flex;
   justify-content: space-between;
@@ -288,7 +288,7 @@ a {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-around;
-    /* margin-left: 50px; */
+    margin-left: 50px;
   }
 
   .nav__toggle {
