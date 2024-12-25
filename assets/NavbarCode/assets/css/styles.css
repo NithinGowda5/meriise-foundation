@@ -64,13 +64,17 @@ a {
 .containerofNavbar {
   /* place-items: center; */
   max-width: 1120px;
-  margin-inline: 1.5rem;
+  /* padding: 0 350px; */
+  /* background-color: aqua; */
+  /* margin-inline: 1.5rem; */
 }
 
 /*=============== HEADER ===============*/
 .header {
   position: sticky;
+  background-color: aqua;
   /* top: 0; */
+  left: 50%;
   width: 100%;
   /* background-color: var(--black-color); */
   background-color: white;
@@ -158,6 +162,7 @@ a {
     background-color: white;
     color: black;
     padding-top: 1rem;
+    /* margin: 0 100px; */
   }
 }
 

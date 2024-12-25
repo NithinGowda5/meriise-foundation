@@ -137,8 +137,8 @@ q {
 }
 
 .snav-bar {
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
     /* padding: 2px 5px; */
     /* text-align: center; */
     position: -webkit-sticky; 
