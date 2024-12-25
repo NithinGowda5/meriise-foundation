@@ -2399,6 +2399,7 @@
     <script src="assets/sliderPart/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/slider2/script.js"></script>
+    <script src="assets/NavbarCode/assets/js/main.js"></script>
 
 
 
@@ -2421,19 +2422,19 @@
         //     }
         // }
 
-        function clickFunction(e) {
-            let list = document.getElementById('elements')
-            list.classList.toggle('hidden')
-            let iconName = e.getAttribute('name');
-            e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
-        }
+        // function clickFunction(e) {
+        //     let list = document.getElementById('elements')
+        //     list.classList.toggle('hidden')
+        //     let iconName = e.getAttribute('name');
+        //     e.setAttribute('name', iconName === 'menu' ? 'close' : 'menu');
+        // }
 
-        document.addEventListener('click', function (event) {
-            if (!event.target.closest('#box, #box2, #icons, #icons2')) {
-                document.getElementById('box').classList.add('hidden');
-                document.getElementById('box2').classList.add('hidden');
-            }
-        });
+        // document.addEventListener('click', function (event) {
+        //     if (!event.target.closest('#box, #box2, #icons, #icons2')) {
+        //         document.getElementById('box').classList.add('hidden');
+        //         document.getElementById('box2').classList.add('hidden');
+        //     }
+        // });
 
         function toggleFunction(event) {
             event.stopPropagation(); // prevent the event from bubbling up to the document

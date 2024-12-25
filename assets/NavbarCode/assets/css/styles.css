@@ -172,7 +172,7 @@ a {
   background-color: white;
   color: black;
   font-weight: var(--font-semi-bold);
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 1rem;
 
   display: flex;
   justify-content: space-between;
@@ -215,6 +215,7 @@ a {
 
 .dropdown__link,
 .dropdown__sublink {
+  /* margin: 10px; */
   padding: 1rem 1rem .5rem 2.5rem;
   color: var(--white-color);
   background-color: var(--black-color-light);
@@ -287,7 +288,7 @@ a {
     height: calc(var(--header-height) + 2rem);
     display: flex;
     justify-content: space-around;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
 
   .nav__toggle {
