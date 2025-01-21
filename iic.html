@@ -31,6 +31,9 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="assets/css/newcss.css">
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css">
 
 </head>
 <style>
@@ -40,6 +43,10 @@
 		font-family: "Poppins", serif;
 		font-weight: 300;
 		font-style: normal;
+	}
+	header{
+		/* border-bottom: 1px solid grey; */
+		box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.4);
 	}
 
 	a:link {
@@ -187,7 +194,7 @@
 
 
 
-		<nav class="bg-black lg:flex lg:items-center lg:justify-between">
+		<!-- <nav class="bg-black lg:flex lg:items-center lg:justify-between">
 			<div class="flex items-center justify-between">
 				<a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20"></a>
 
@@ -196,13 +203,13 @@
 						class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
 				</div>
 
-			</div>
+			</div> -->
 
-			<!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
+		<!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
         class="text-4xl block lg:hidden h-24"></ion-icon> -->
 
 
-			<div class="hidden lg:block" id="elements">
+		<!-- <div class="hidden lg:block" id="elements">
 				<ul class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
 					id="list">
 					<li class="mx-2"><a href="index.html">Home</a></li>
@@ -232,11 +239,11 @@
 							<div><a href="documents.html">Documents</a></div>
 
 						</li>
-					</div>
-					<!-- <li class="mx-2"><a href="collab.html">Collaborations</a></li>
+					</div> -->
+		<!-- <li class="mx-2"><a href="collab.html">Collaborations</a></li>
                     <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li> -->
 
-
+		<!-- 
 					<div class="flex ml-2">
 						<li class="relative" onclick="toggleFunction(event)" id="click">
 							<a href="#" class="hover:text-blue-600">Pragyatha</a>
@@ -257,7 +264,224 @@
 
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
+
+
+		<header class="header">
+			<nav class="nav containerofNavbar">
+				<div class="nav__data">
+					<a href="#" class="nav__logo">
+						<img src="assets/MERIISE FOUNDATION logo 2.0.png" alt="" class="h-16">
+					</a>
+
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="ri-menu-line nav__burger"></i>
+						<i class="ri-close-line nav__close"></i>
+					</div>
+				</div>
+
+				<!--=============== NAV MENU ===============-->
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li><a href="index.html" class="nav__link">Home</a></li>
+
+						<li class="dropdown__item">
+							<div class="nav__link">
+								About ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+							</div>
+
+							<ul class="dropdown__menu">
+								<li>
+									<a href="aboutmeriise.html" class="dropdown__link">
+										<i class="ri-pie-chart-line"></i> ME-RIISE FOUNDATION
+									</a>
+								</li>
+
+
+								<li>
+									<a href="infrastructure.html" class="dropdown__link">
+										<i class="ri-pie-chart-line"></i> Infrastructure
+									</a>
+								</li>
+
+
+								<li>
+									<a href="ourAchivements.html" class="dropdown__link">
+										<i class="ri-arrow-up-down-line"></i> Achievements
+									</a>
+								</li>
+
+
+								<li class="dropdown__subitem">
+									<div class="dropdown__link">
+										<i class="ri-bar-chart-line"></i> Documents <i
+											class="ri-add-line dropdown__add"></i>
+									</div>
+
+									<ul class="dropdown__submenu">
+										<li>
+											<a href="Nisp.html" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> MCE NISP POLICY
+											</a>
+										</li>
+
+										<li>
+											<a href="collab.html" class="dropdown__sublink">
+												<i class="ri-cash-line"></i> Collaborations
+											</a>
+										</li>
+
+										<li>
+											<a href="Certificates.html" class="dropdown__sublink">
+												<i class="ri-cash-line"></i> Certificates
+											</a>
+										</li>
+
+
+									</ul>
+								</li>
+
+
+								<li class="dropdown__subitem">
+									<div class="dropdown__link">
+										<i class="ri-bar-chart-line"></i> Members of ME-RIISE <i
+											class="ri-add-line dropdown__add"></i>
+									</div>
+
+									<ul class="dropdown__submenu">
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i>Board of Directors
+											</a>
+										</li>
+
+										<li>
+											<a href="faculty.html" class="dropdown__sublink">
+												<i class="ri-cash-line"></i> Faculty
+											</a>
+										</li>
+
+										<li>
+											<a href="team.html" class="dropdown__sublink">
+												<i class="ri-refund-2-line"></i> Team ME-RIISE
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<!--=============== DROPDOWN SUBMENU ===============-->
+
+							</ul>
+						</li>
+
+						<!--=============== DROPDOWN 1 ===============-->
+						<li class="dropdown__item">
+							<div class="nav__link">
+								Wings of ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+							</div>
+
+							<ul class="dropdown__menu">
+								<li>
+									<a href="startups.html" class="dropdown__link">
+										<i class="ri-pie-chart-line"></i>Start Ups
+									</a>
+								</li>
+
+
+
+								<li>
+									<a href="iic.html" class="dropdown__link">
+										<i class="ri-pie-chart-line"></i> MoE
+									</a>
+								</li>
+
+								<li>
+									<a href="nain.html" class="dropdown__link">
+										<i class="ri-arrow-up-down-line"></i> NAIN
+									</a>
+								</li>
+
+
+
+								<li>
+									<a href="uba.html" class="dropdown__link">
+										<i class="ri-arrow-up-down-line"></i> UBA
+									</a>
+								</li>
+
+
+								<!-- <li class="dropdown__subitem">
+									<div class="dropdown__link">
+										<i class="ri-bar-chart-line"></i> Documents <i
+											class="ri-add-line dropdown__add"></i>
+									</div>
+	  
+									<ul class="dropdown__submenu">
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> MCE NISP POLICY
+											</a>
+										</li>
+	  
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-cash-line"></i> Collaborations
+											</a>
+										</li>
+	  
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-refund-2-line"></i> Refunds
+											</a>
+										</li>
+									</ul>
+								</li> -->
+
+								<!--=============== DROPDOWN SUBMENU ===============-->
+								<li class="dropdown__subitem">
+									<div class="dropdown__link">
+										<i class="ri-bar-chart-line"></i> Pragyatha <i
+											class="ri-add-line dropdown__add"></i>
+									</div>
+
+									<ul class="dropdown__submenu">
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> Pragyatha24
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> Pragyatha23
+											</a>
+										</li>
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> Pragyatha22
+											</a>
+										</li>
+										<li>
+											<a href="#" class="dropdown__sublink">
+												<i class="ri-file-list-line"></i> Pragyatha21
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+
+						<li><a href="https://meriise-events.vercel.app/" class="nav__link">Events</a></li>
+						<li><a href="#" class="nav__link">Contact Us</a></li>
+
+						<!--=============== DROPDOWN 2 ===============-->
+
+
+						<!-- <li><a href="#" class="nav__link">Contact Us</a></li> -->
+					</ul>
+				</div>
+			</nav>
+		</header>
 
 
 
