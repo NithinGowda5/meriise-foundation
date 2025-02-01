@@ -31,6 +31,10 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="assets/css/newcss.css">
 
+  <link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -46,6 +50,10 @@
       font-style: normal;
     }
 
+    header {
+      box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+    }
+
     .bordering {
       padding: 20px;
       border-radius: 20px;
@@ -59,58 +67,218 @@
 
 
   <div class="snav-bar" style="background-color: black;">
-    <div class="logo">
-      <a href="index.html">
-        <img class="mr-logo mt-1 " src="img/logo.png" />
-      </a>
-    </div>
+    <header class="header">
+      <nav class="nav containerofNavbar">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="assets/MERIISE FOUNDATION logo 2.0.png" alt="" class="h-16">
+          </a>
 
-    <div class="nav-link">
-      <ul class="nvl">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="faculty.html">Faculty</a></li>
-        <li><a href="team.html">Student Members</a></li>
-        <li><a href="startups.html">Start-Ups</a></li>
-
-        <div class="dropdown" style="display: inline-block;">
-          <button class="dropbtn" id="dropbtn" onclick="handleMoreBtn()">
-            More
-            <i class="fa fa-caret-down" style="color: rgb(65, 142, 243);"></i>
-          </button>
-
-
-          <div class="dropdown-content" id="dropdown-content">
-            <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
-            <a href="events.html">Successful Events</a>
-            <a href="prag.html">PRAGYATHA - 19</a>
-            <!-- <a href="alumni.html">Alumni</a> -->
-            <a href="Nisp.html">NISP-policy</a>
-
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
           </div>
         </div>
-      </ul>
-    </div>
 
-    <div class="smenu-btn ">
-      <button onclick="openNav()" style="background-color: black;outline: none;">
-        <i class="fa fa-bars " style="color: rgb(65, 142, 243);" aria-hidden="true"></i>
-      </button>
-    </div>
-  </div>
-  <div id="myNav" class="overlay" style="margin-top: 70px;">
-    <a href="javascript:void(0)" class="closebtn" style="font-size: 15px;" onclick="closeNav()"><i
-        class="fa fa-times"></i></a>
-    <div class="overlay-content">
-      <a href="index.html">Home</a>
-      <a href="faculty.html">Faculty</a>
-      <a href="team.html">Student Members</a>
-      <a href="startups.html">Start-Ups</a>
-      <a href="http://www.mcehassan.ac.in">Malnad College of Engineering</a>
-      <a href="events.html">Successful Events</a>
-      <a href="prag.html">PRAGYATHA - 19</a>
-      <!-- <a href="alumni.html">Alumni</a> -->
-      <a href="Nisp.html">NISP-policy</a>
-    </div>
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+
+            <li class="dropdown__item">
+              <div class="nav__link">
+                About ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="aboutmeriise.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> ME-RIISE FOUNDATION
+                  </a>
+                </li>
+
+
+                <li>
+                  <a href="infrastructure.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Infrastructure
+                  </a>
+                </li>
+
+
+                <li>
+                  <a href="ourAchivements.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> Achievements
+                  </a>
+                </li>
+
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Documents <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="Nisp.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> MCE NISP POLICY
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="collab.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Collaborations
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="Certificates.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Certificates
+                      </a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Members of ME-RIISE <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i>Board of Directors
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="faculty.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Faculty
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="team.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Team ME-RIISE
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+
+              </ul>
+            </li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Wings of ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="startups.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i>Start Ups
+                  </a>
+                </li>
+
+
+
+                <li>
+                  <a href="iic.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> MoE
+                  </a>
+                </li>
+
+                <li>
+                  <a href="nain.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> NAIN
+                  </a>
+                </li>
+
+
+
+                <li>
+                  <a href="uba.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> UBA
+                  </a>
+                </li>
+
+
+                <!-- <li class="dropdown__subitem">
+                              <div class="dropdown__link">
+                                  <i class="ri-bar-chart-line"></i> Documents <i
+                                      class="ri-add-line dropdown__add"></i>
+                              </div>
+
+                              <ul class="dropdown__submenu">
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-file-list-line"></i> MCE NISP POLICY
+                                      </a>
+                                  </li>
+
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-cash-line"></i> Collaborations
+                                      </a>
+                                  </li>
+
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-refund-2-line"></i> Refunds
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li> -->
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Pragyatha <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha24
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha23
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha22
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha21
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="https://meriise-events.vercel.app/" class="nav__link">Events</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+
+
+            <!-- <li><a href="#" class="nav__link">Contact Us</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
   </div>
 
 
@@ -130,7 +298,7 @@
 
           </div> -->
           <div>
-            <p class="text-6xl text-center">TECH@10</p>
+            <p class="text-[100px] text-center">TECH@10</p>
           </div>
           <br>
 
@@ -179,13 +347,14 @@
             <br>
           </div> -->
 
-          <div class="goalsection m-10">
+          <div class="goalsection">
             <p class="text-4xl">Goal</p>
             <p class="name text-2xl"> It was started by Likith.H.N, president of ME-RIISE in the year
               2019</p>
-            <div class="my-10">
+            <div class="my-10 flex justify-center items-center">
               <img src="img/tech7.jpg" alt="" class="rounded-3xl">
             </div>
+
             <div class="bg-blue-400 p-10 rounded-2xl text-xl">
               <p> It was started with only goal of teaching the budding engineers
                 move towards their destination and improving our knowledge in the course of teaching.</p>
@@ -206,7 +375,7 @@
               <br>
 
             </div>
-            <div class="grid grid-cols-2">
+            <div class="lg:grid grid-cols-2">
               <div class="m-10">
                 <img src="img/tech6.jpg" alt="" class="rounded-2xl h-[72vh]">
 
@@ -220,7 +389,7 @@
             </div>
 
             <div>
-              <p class="text-3xl text-center m-4">MOTTO</p>
+              <p class="text-6xl text-center m-4">MOTTO</p>
               <p class="text-xl text-center">"We teach to Learn"</p>
             </div>
           </div>
@@ -297,7 +466,7 @@
             </div>
 
             <br>
-            <div class="bordering text-lg">
+            <div class="bordering text-lg p-10">
               "My Tech@10 experience is
               awesome.I have learned many things about home automation,arduino,nodemcu and IoT based projects
               on the 10 days program Home Automation Internship conducted by Tech@10.Likhith who conducted the
@@ -393,10 +562,10 @@
                     </div>
                   </div>
                 </div> -->
-              </div>
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
 
