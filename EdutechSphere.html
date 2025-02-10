@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ME-RIISE </title>
+    <title>Document</title>
+
 </head>
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -55,12 +56,20 @@
         border: 5px solid rgb(39, 146, 247);
     }
 
-    header {
+    .snav-bar {
         box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        background: white;
+        /* Ensure the background is not transparent */
+        z-index: 1000;
+        /* Make sure it's above other elements */
     }
 </style>
 
 <body>
+
     <div class="snav-bar">
         <header class="header">
             <nav class="nav containerofNavbar">
@@ -279,55 +288,22 @@
         </header>
     </div>
 
-    <div class="m-10 text-center">
-        <p class="text-black text-6xl my-10">Chathurpravarthan Private Limited</p>
-        <p class="m-10">
-            Chathur Pravarthan Private Limited is now poised to revolutionize the market with its sophisticated and
-            market-ready "Automated Solar Power Cleaning Robot". The company envisions providing a more advanced
-            solution for the efficient cleaning of solar panels, catering to the growing demand in the renewable energy
-            sector.
-        </p>
-    </div>
-    <br>
-
-
-    <div class="image-container">
-        <div class="m-10 rounded-3xl">
-            <img src="assets/Chathurprarvathan/Pic3.jfif" alt="" class="rounded-2xl">
+    <div class="h-[100vh] bg-blue-100">
+        <div class="p-10">
+            <p class="text-6xl text-center">EduTechsphere</p>
         </div>
-        <div class="m-10 rounded-3xl">
-            <img src="assets/Chathurprarvathan/pic2.jfif" alt="" class="rounded-2xl">
+        <div class="m-10">
+            <p class="text-2xl text-center">
+                We deliver innovative and technology-infused educational solutions tailored to both educational
+                institutions and corporate organizations, facilitating hands-on learning experiences
+            </p>
         </div>
-        <div class="m-10 rounded-3xl text-3xl">
-            03
+        <div class="grid grid-cols-2">
+            <div class="h-[50vh] bg-gray-400 m-10 rounded-2xl"></div>
+            <div class="h-[50vh] bg-gray-400 m-10 rounded-2xl"></div>
         </div>
     </div>
-    <br>
-    <hr>
-
-
-    <div class="m-10 text-4xl text-center">Success Story of Chathurpravarthan Private Limited</div>
-    <div class="bordering text-xl p-10">
-        <p class="imp1"> Chathur Pravarthan Private Limited,</p>
-        <p class="imp">established in 2022,</p> is a remarkable success story. It
-        originated as a start-up within the premises of Malnad College of Engineering, born out of the
-        successful implementation of the "Solar Panel Cleaning Robot" project. This project was made
-        possible through the support of the New Age Innovation Network (NAIN) and K-tech, a
-        Government of Karnataka initiative.
-        NAIN provided funding for a total of nine projects, and Chathur Pravarthan's "Solar Panel
-        Cleaning Robot" was one of the eight projects that achieved remarkable success. Led by Mr.
-        Achal J and his team, with the mentorship ofDr. Geetha Kiran A and Dr. Mohana Lakshmi J,
-        the project was successfully implemented and demonstrated.
-        Following NAIN's guidance to promote start-ups emerging from the implemented projects, the
-        team behind the <p class="imp">"Solar Panel Cleaning Robot"</p> took the initiative to establish Chathur
-        Pravarthan Private Limited in November 2022, The company's directors include <p class="imp"> Dr. Geetha
-            Kiran A, Dr. Mohana Lakshmi J and Mr. Achal J.</p>
-        Chathur Pravarthan Private Limited is now poised to revolutionize the market with its
-        sophisticated and market-ready "Automated Solar Power Cleaning Robot". The company
-        envisions providing a more advanced solution for the efficient cleaning of solar panels, catering
-        to the growing demand in the renewable energy sector.
-
-    </div>
+    <!-- <div class="h-[100vh] bg-pink-500"></div> -->
 
 </body>
 

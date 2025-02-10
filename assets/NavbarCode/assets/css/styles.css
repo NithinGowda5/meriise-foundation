@@ -110,7 +110,7 @@ a {
 .nav__logo {
   display: inline-flex;
   align-items: center;
-  /* column-gap: 1.25rem; */
+  column-gap: .25rem;
   font-weight: var(--font-semi-bold);
   /* Color highlighting when pressed on mobile devices */
   /*-webkit-tap-highlight-color: transparent;*/
