@@ -15,8 +15,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- bootstrap 4 css -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" /> -->
 
   <!-- fontawesome cdn -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
@@ -27,7 +27,12 @@
   <!-- custom css -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" href="assets/css/newcss.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
     a:link {
       text-decoration: none;
     }
@@ -37,7 +42,8 @@
           rgb(129, 216, 228),
           rgb(154, 70, 223));
     }
-    header{
+
+    header {
       box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
     }
 
@@ -68,6 +74,11 @@
 
     #box2 {
       z-index: 1;
+    }
+
+    .imagesof {
+      height: 250px;
+      width: 200px;
     }
 
 
@@ -171,79 +182,218 @@
 
     </div> -->
 
-    <nav class="bg-black lg:flex lg:items-center lg:justify-between">
-      <div class="flex items-center justify-between">
-        <a href="index.html"><img src="images/meriiseNewLogo.png" alt="" class="h-20"></a>
+    <header class="header">
+      <nav class="nav containerofNavbar">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img src="assets/MERIISE FOUNDATION logo 2.0.png" alt="" class="h-16">
+          </a>
 
-        <div>
-          <ion-icon name="menu" onclick="clickFunction(this)" class="text-4xl text-blue-400 block lg:hidden"></ion-icon>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
         </div>
 
-      </div>
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
 
-      <!-- <ion-icon name="menu" id="menu" onclick="clickFunction(this)"
-  class="text-4xl block lg:hidden h-24"></ion-icon> -->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                About ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
 
-
-      <div class="hidden lg:block" id="elements">
-        <ul
-          class="text-blue-400 font-bold bg-black px-4 py-4 lg:flex lg:justify-between lg:items-center w-48 md:w-42 lg:w-full float-right md:float-right h-screen md:h-screen lg:h-auto z-50"
-          id="list">
-          <li class="mx-2"><a href="index.html">Home</a></li>
-          <li class="mx-2"><a href="aboutmeriise.html">About us</a></li>
-          <li class="mx-2"><a href="faculty.html">Faculty</a></li>
-          <li class="mx-2"><a href="team.html">Team MERIISE</a></li>
-          <li class="mx-2"><a href="iic.html">MoE</a></li>
-          <li class="mx-2"><a href="nain.html">NAIN</a></li>
-          <li class="mx-2"><a href="uba.html">UBA</a></li>
-          <li class="mx-2"><a href="infrastructure.html">Infrastructure</a></li>
-          <li class="mx-2"><a href="startups.html">Start ups</a></li>
-          <li class="mx-2"><a href="https://meriise-events.vercel.app/">Events</a></li>
-          <li class="mx-2"><a href="https://www.mcehassan.ac.in/">MCE</a></li>
-          <li class="mx-2"><a href="ourAchivements.html">Achievements</a></li>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="aboutmeriise.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> ME-RIISE FOUNDATION
+                  </a>
+                </li>
 
 
-          <div class="flex ml-2">
-            <li class="relative" onclick="toggleFunction2(event)" id="click">
-              <a href="#" class="hover:text-blue-600">Documents</a>
-              <ion-icon name="caret-down-outline" class="px-1" id="icons2"></ion-icon>
+                <li>
+                  <a href="infrastructure.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> Infrastructure
+                  </a>
+                </li>
 
+
+                <li>
+                  <a href="ourAchivements.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> Achievements
+                  </a>
+                </li>
+
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Documents <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="Nisp.html" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> MCE NISP POLICY
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="collab.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Collaborations
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="Certificates.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Certificates
+                      </a>
+                    </li>
+
+
+                  </ul>
+                </li>
+
+
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Members of ME-RIISE <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i>Board of Directors
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="faculty.html" class="dropdown__sublink">
+                        <i class="ri-cash-line"></i> Faculty
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="team.html" class="dropdown__sublink">
+                        <i class="ri-refund-2-line"></i> Team ME-RIISE
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+
+              </ul>
             </li>
-            <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600"
-              id="box2" onclick="dropdown()">
-              <div><a href="Nisp.html">MCE NISP Policy</a></div>
-              <div><a href="collab.html">Collaboration</a></div>
-              <div><a href="documents.html">Documents</a></div>
 
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Wings of ME-RIISE <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="startups.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i>Start Ups
+                  </a>
+                </li>
+
+
+
+                <li>
+                  <a href="iic.html" class="dropdown__link">
+                    <i class="ri-pie-chart-line"></i> MoE
+                  </a>
+                </li>
+
+                <li>
+                  <a href="nain.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> NAIN
+                  </a>
+                </li>
+
+
+
+                <li>
+                  <a href="uba.html" class="dropdown__link">
+                    <i class="ri-arrow-up-down-line"></i> UBA
+                  </a>
+                </li>
+
+
+                <!-- <li class="dropdown__subitem">
+                              <div class="dropdown__link">
+                                  <i class="ri-bar-chart-line"></i> Documents <i
+                                      class="ri-add-line dropdown__add"></i>
+                              </div>
+
+                              <ul class="dropdown__submenu">
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-file-list-line"></i> MCE NISP POLICY
+                                      </a>
+                                  </li>
+
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-cash-line"></i> Collaborations
+                                      </a>
+                                  </li>
+
+                                  <li>
+                                      <a href="#" class="dropdown__sublink">
+                                          <i class="ri-refund-2-line"></i> Refunds
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li> -->
+
+                <!--=============== DROPDOWN SUBMENU ===============-->
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link">
+                    <i class="ri-bar-chart-line"></i> Pragyatha <i class="ri-add-line dropdown__add"></i>
+                  </div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha24
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha23
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha22
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink">
+                        <i class="ri-file-list-line"></i> Pragyatha21
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-          </div>
-          <!-- <li class="mx-2"><a href="collab.html">Collaborations</a></li>
-              <li class="mx-2"><a href="Nisp.html">MCE NISP Policy</a></li> -->
+
+            <li><a href="https://meriise-events.vercel.app/" class="nav__link">Events</a></li>
+            <li><a href="#" class="nav__link">Contact Us</a></li>
+
+            <!--=============== DROPDOWN 2 ===============-->
 
 
-          <div class="flex ml-2">
-            <li class="relative" onclick="toggleFunction(event)" id="click">
-              <a href="#" class="hover:text-blue-600">Pragyatha</a>
-              <ion-icon name="caret-down-outline" class="px-1" id="icons"></ion-icon>
-
-            </li>
-            <li class="absolute p-2 rounded-sm mt-8 hidden rounded-xl text-md w-[130px] bg-white text-blue-600" id="box"
-              onclick="dropdown()">
-              <div><a href="pragyatha23.html">Pragyatha 23</a></div>
-              <div><a href="pragyatha22.html">Pragyatha 22</a></div>
-              <div><a href="Pragyatha.html">Pragyatha 21</a></div>
-              <div><a href="prag.html">Pragyatha 19</a></div>
-
-            </li>
-          </div>
-
-
-
-        </ul>
-      </div>
-    </nav>
-
-
+            <!-- <li><a href="#" class="nav__link">Contact Us</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </header>
 
   </div>
 
@@ -353,23 +503,29 @@
               </div>
              </div> -->
 
-          <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
-            <div class="col-md-6 text-center">
-              <img src="img/2.jpg" alt="explore" class="img-fluid w-50 mx-auto" style="border: 1px solid black" />
+
+
+          <div class="lg:grid grid-cols-2">
+            <div class="col-md-6 text-center m-10">
+              <img src="img/2.jpg" alt="explore" class="imagesof" />
             </div>
 
-            <div class="col-md-6 pt-2">
-              <h2 style="margin-left: 10px" class="text-3xl">Dr. MohanaLakshmi</h2>
-              <p style="margin-left: -20px; font-size:20px">
-                B.E , M.Tech., Ph.D. Associate Professor
-                <br />
-                Associate Professor, Dept. of Electrical and Electronics
-                Engineering
-              </p>
-
-              <h4>COO of ME-RIISE FOUNDATION</h4>
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h2 class="text-3xl">Dr. MohanaLakshmi</h2>
+                <p>
+                  B.E , M.Tech., Ph.D. Associate Professor
+                  <br />
+                  Associate Professor, Dept. of Electrical and Electronics Engineering
+                </p>
+                <h4>COO of ME-RIISE FOUNDATION</h4>
+              </div>
             </div>
           </div>
+          <br>
+          <hr>
+
+
 
           <!-- <div class="row pb-3 text-center pt-2" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
@@ -425,7 +581,7 @@
                             </div>
                         </div>
         -->
-          <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
+          <!-- <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
               <img src="img/5.jpg" alt="explore" class="img-fluid w-50 mx-auto" style="border: 1px solid black" />
             </div>
@@ -439,9 +595,36 @@
               </p>
               <p> Member of ME-RIISE FOUNDATION, MCE, Hassan</p>
             </div>
+          </div> -->
+
+
+
+          <div class="lg:grid grid-cols-2">
+            <div class="col-md-6 text-center m-10">
+              <img src="img/5.jpg" alt="explore" class="imagesof" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h2 class="text-3xl">Chaitra Chandrashekar</h2>
+                <p>
+                  B.E , M.Tech.
+                  <br />
+                  Assistant Professor, Dept. of Electronics & Instrumentation
+                  Engineering,
+                </p>
+                <h4> Member of ME-RIISE FOUNDATION, MCE, Hassan</h4>
+              </div>
+            </div>
           </div>
 
-          <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
+          <br>
+          <hr>
+
+
+
+
+          <!-- <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
               <img src="img/up1.jpeg" alt="explore" class="img-fluid w-50 mx-auto" style="border: 1px solid black" />
             </div>
@@ -455,7 +638,30 @@
               </p>
               <p>Member of ME-RIISE FOUNDATION, MCE, Hassan</p>
             </div>
+          </div> -->
+
+
+          <div class="lg:grid grid-cols-2">
+            <div class="col-md-6 text-center m-10">
+              <img src="img/up1.jpeg" alt="explore" class="imagesof" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h2 class="text-3xl">Dr. Prakruthi. H. L</h2>
+                <p>
+                  B.E., M.Tech.
+                  <br />
+                  Assistant Professor, Dept. of Electronics Communication &
+                  Engineering,
+                </p>
+                <h4> Member of ME-RIISE FOUNDATION, MCE, Hassan</h4>
+              </div>
+            </div>
           </div>
+
+          <br>
+          <hr>
 
           <!-- <div
               class="row pb-3 pt-5 text-center"
@@ -546,7 +752,7 @@
               </div>
             </div> -->
 
-          <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
+          <!-- <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
               <img src="img/18.jpg" alt="explore" class="img-fluid w-50 mx-auto" style="border: 1px solid black" />
             </div>
@@ -561,8 +767,33 @@
               </p>
               <p> Member of ME-RIISE FOUNDATION, MCE, Hassan</p>
             </div>
-          </div>
+          </div> -->
 
+          <div class="lg:grid grid-cols-2">
+            <div class="col-md-6 text-center m-10">
+              <img src="img/18.jpg" alt="explore" class="imagesof" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h2 class="text-3xl">Mrs. Nithyashree. R</h2>
+                <p>
+                  B.E., M.Tech
+                  <br />
+                  Assistant Professor, Dept. of Computer Science &
+                  Engineering,
+                </p>
+                <h4>Member of ME-RIISE FOUNDATION, MCE, Hassan</h4>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+
+
+
+
+          <!-- 
           <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
               <img src="img/19.jpg" alt="explore" class="img-fluid w-50 mx-auto" style="border: 1px solid black" />
@@ -577,7 +808,30 @@
               <p> Member of
                 ME-RIISE FOUNDATION, MCE, Hassan</p>
             </div>
+          </div> -->
+
+
+
+          <div class="lg:grid grid-cols-2">
+            <div class="col-md-6 text-center m-10">
+              <img src="img/19.jpg" alt="explore" class="imagesof" />
+            </div>
+
+            <div class="flex justify-center items-center">
+              <div class="text-center">
+                <h2 class="text-3xl">Ms. Supriya. M. J</h2>
+                <p>
+                  B.E , M.Tech
+                  <br />
+                  Assistant Professor, Dept. of Civil Engineering
+                </p>
+                <h4> Member of
+                  ME-RIISE FOUNDATION, MCE, Hassan</h4>
+              </div>
+            </div>
           </div>
+          <br>
+          <hr>
 
           <!-- <div class="row pb-3 pt-5 text-center" style="border-bottom: 1px solid grey">
             <div class="col-md-6 text-center">
@@ -715,6 +969,8 @@
 <script src="assets/js/skel.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/NavbarCode/assets/js/main.js"></script>
+
 <!--<script src="assets/js/from/jquery.min.js"></script>
 				<script src="assets/js/from/skel.min.js"></script>
 				<script src="assets/js/from/skel-layers.min.js"></script>
