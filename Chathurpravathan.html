@@ -36,9 +36,10 @@
         /* Make sure it's above other elements */
     }
 
-    .image-container {
-        display: flex;
-    }
+    /* .image-container {
+        display: grid;
+        g
+    } */
 
     .image-container img {
         width: 400px;
@@ -290,9 +291,9 @@
         </header>
     </div>
 
-    <div class="m-10 text-center">
-        <p class="text-black text-6xl my-10">Chathurpravarthan Private Limited</p>
-        <p class="m-10">
+    <div class="m-6">
+        <p class="text-black text-2xl lg:text-6xl my-10 text-center">Chathurpravarthan Private Limited</p>
+        <p class="lg:m-10" style="text-align: justify;">
             Chathur Pravarthan Private Limited is now poised to revolutionize the market with its sophisticated and
             market-ready "Automated Solar Power Cleaning Robot". The company envisions providing a more advanced
             solution for the efficient cleaning of solar panels, catering to the growing demand in the renewable energy
@@ -302,11 +303,11 @@
     <br>
 
 
-    <div class="image-container">
-        <div class="m-10 rounded-3xl">
-            <img src="assets/Chathurprarvathan/Pic3.jfif" alt="" class="rounded-2xl">
+    <div class="lg:grid grid-cols-3">
+        <div class="m-6 rounded-3xl">
+            <img src="assets/Chathurprarvathan/Pic3.jfif" alt="" class="rounded-2xl lg:h-[64vh] ">
         </div>
-        <div class="m-10 rounded-3xl">
+        <div class="m-6 rounded-3xl">
             <img src="assets/Chathurprarvathan/pic2.jfif" alt="" class="rounded-2xl">
         </div>
         <div class="m-10 rounded-3xl text-3xl">
@@ -317,10 +318,12 @@
     <hr>
 
 
-    <div class="m-10 text-4xl text-center">Success Story of Chathurpravarthan Private Limited</div>
+    <div class="m-10 text-2xl lg:text-4xl">Success Story of Chathurpravarthan Private Limited</div>
     <div class="bordering text-xl p-10">
         <p class="imp1"> Chathur Pravarthan Private Limited,</p>
-        <p class="imp">established in 2022,</p> is a remarkable success story. It
+        <p class="imp text-sm lg:text-xl">established in 2022,</p> 
+        <div class="text-sm lg:text-lg">
+            is a remarkable success story. It
         originated as a start-up within the premises of Malnad College of Engineering, born out of the
         successful implementation of the "Solar Panel Cleaning Robot" project. This project was made
         possible through the support of the New Age Innovation Network (NAIN) and K-tech, a
@@ -337,8 +340,12 @@
         sophisticated and market-ready "Automated Solar Power Cleaning Robot". The company
         envisions providing a more advanced solution for the efficient cleaning of solar panels, catering
         to the growing demand in the renewable energy sector.
+        </div>
 
     </div>
+
+    <script src="assets/NavbarCode/assets/js/main.js"></script>
+
 
 </body>
 
