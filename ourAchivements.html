@@ -8,8 +8,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+
 
 <!-- fontawesome cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
@@ -23,8 +22,21 @@
 <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css">
+<!-- <link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css"> -->
+
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  body {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  header {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+  }
+
 
   .vision:hover {
     background: linear-gradient(to right,
@@ -35,7 +47,8 @@
   a:link {
     text-decoration: none;
   }
-/* 
+
+  /* 
 
 
 
@@ -463,20 +476,22 @@
     </header> -->
 
   <div>
-    <h1 class="text-4xl text-center py-10 text-xl md:text-4xl font-bold text-black">
+    <p class="text-3xl lg:text-6xl text-center py-10 font-bold text-black rounded-2xl">
       OUR ACHIEVEMENTS
-    </h1>
+    </p>
   </div>
 
-  <div class="bg-gray-200 m-16 sm:p-5 md:p-5">
-    <p class="text-4xl text-center py-10 font-bold">
+  <div class="bg-gray-200 lg:m-16 sm:p-5 md:p-5 rounded-2xl">
+    <p class="text-2xl lg:text-4xl text-center py-10 font-bold">
       Eminent Engineer Award 2024
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/6.jpg" alt="" />
+      <div class="p-8 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+        <img src="ourAchivementsImages/6.jpg" alt="" class="rounded-2xl" />
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Dr. Geetha Kiran A, CEO, ME-RIISE FOUNDATION, has been honored with
         the Eminent Engineer Award! by Institution of Engineers, Karnataka
         State Chapter, Bengaluru. Her outstanding leadership and relentless
@@ -489,18 +504,21 @@
     <!-- float-left mr-4 mb-4 -->
     <hr class="border-t-2 border-gray-400 my-4" />
 
-    <p class="text-4xl text-center py-10 font-bold">
+    <p class="text-2xl lg:text-4xl text-center py-10 font-bold mx-2">
       ME-RIISE FOUNDATION signed an MoU with SUPRMENTR
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
+
         ME-RIISE FOUNDATION signed an MoU with SUPRMENTR, a Peer to Peer
         Career Mentorship Platform that helps students network with industry
         mentors, upskill, learn and prepare for Interviews.
       </div>
-      <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/12.jpg" alt="" />
+      <div class="p-8 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
+        <img src="ourAchivementsImages/12.jpg" alt="" class="rounded-2xl" />
       </div>
     </div>
 
@@ -510,9 +528,11 @@
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/15.jpg" alt="" />
+        <img src="ourAchivementsImages/15.jpg" alt="" class="rounded-2xl" />
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         We’re excited to announce that our event, "Empowering Youth through
         Community Centric Education," has been highlighted in local newspapers
         including Ecchara Vani, Hassan Mitra, Hassan Vani, Jana Hitha, and
@@ -550,7 +570,9 @@
       India's Best Engineering Institutions
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Malnad College of Engineering has been recognized in the latest
         edition of Careers360’s annual assessment 'India's Best Engineering
         Institutions' 2024 issue. Our institution has been rated ‘AAA’ making
@@ -560,7 +582,7 @@
         infrastructure, research output and student satisfaction.
       </div>
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/10.jpg" alt="" />
+        <img src="ourAchivementsImages/10.jpg" alt="" class="rounded-2xl"/>
       </div>
     </div>
 
@@ -570,9 +592,11 @@
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/13.jpg" alt="" />
+        <img src="ourAchivementsImages/13.jpg" alt="" class="rounded-2xl"/>
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         The Institution Innovation Council of Malnad College of Engineering
         has consistently performed well, earning a 4-star rating for the past
         two years and ranking in the 101-150 band in the NIRF Innovation
@@ -593,7 +617,9 @@
       Mentor in the Ministry of Education's Mentor-Mentee scheme 2023
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Excited to announce that Malnad College of Engineering has been chosen
         as a Mentor in the Ministry of Education's Mentor-Mentee scheme 2023!
         This feat has been achieved by consistently maintaining 4 star rating
@@ -605,7 +631,7 @@
       </div>
 
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
-        <img src="ourAchivementsImages/7.jpg" alt="" />
+        <img src="ourAchivementsImages/7.jpg" alt="" class="rounded-2xl"/>
       </div>
     </div>
     <hr class="border-t-2 border-gray-400 my-4" />
@@ -614,9 +640,11 @@
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/11.jpg" alt="" />
+        <img src="ourAchivementsImages/11.jpg" alt="" class="rounded-2xl" />
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         ME-RIISE Foundation radiated its influence across borders, promoting
         it's events and etching an impact at MILANA 23, the MCE ALUMNI MEET at
         Washington D C. On this occasion, distinguished alumni Krishnaswamy
@@ -631,7 +659,9 @@
     <hr class="border-t-2 border-gray-400 my-4" />
     <p class="text-4xl text-center py-10 font-bold">BOTMEN 2023</p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Lights, camera, and our BOTMEN are here.. !Step into the captivating
         world of cutting-edge technology, where science fiction becomes
         reality, as MERIISE Foundation proudly conducted its most electrifying
@@ -642,7 +672,7 @@
         one robot at a time.
       </div>
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
-        <img src="ourAchivementsImages/9.jpg" alt="" />
+        <img src="ourAchivementsImages/9.jpg" alt="" class="rounded-2xl"/>
       </div>
     </div>
 
@@ -653,9 +683,11 @@
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/2.jpg" alt="" />
+        <img src="ourAchivementsImages/2.jpg" alt="" class="rounded-2xl" />
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Breaking Barriers, Building Futures - Hassan District Small Scale
         Industries Association (HADSSIA) collaborates with the ME-RIISE
         Foundation to launch a transformative skill development initiative.
@@ -675,12 +707,14 @@
       visit to 'Elecnovo' electric vehicle manufacturing unit in Bangalore
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="leading-loose text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         News published in today's 'Janamitra' newspaper about our students
         visit to 'Elecnovo' electric vehicle manufacturing unit in Bangalore
       </div>
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
-        <img src="ourAchivementsImages/14.jpg" alt="" />
+        <img src="ourAchivementsImages/14.jpg" alt="" class="rounded-2xl" />
       </div>
     </div>
 
@@ -688,9 +722,11 @@
     <p class="text-4xl text-center py-10 font-bold">UBA journey</p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/4.jpg" alt="" />
+        <img src="ourAchivementsImages/4.jpg" alt="" class="rounded-2xl"/>
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Celebrating the spotlight!Our UBA journey took center stage in the
         prestigious pages of Janamitra newspaper on Feb 19, 2024. A heartfelt
         appreciation to the phenomenal team, collaborators, and volunteers who
@@ -720,9 +756,11 @@
     <p class="text-4xl text-center py-10 font-bold">Fueling the Future</p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/8.jpg" alt="" />
+        <img src="ourAchivementsImages/8.jpg" alt="" class="rounded-2xl" />
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         "Fueling the Future" transpired as a beacon of inspiration, amplifying
         the zeal in determined young enthusiasts. This marked the beginning of
         a new chapter in the journey of these young visionaries towards
@@ -735,11 +773,13 @@
       Empowering Young Innovators
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-      <div class="text-lg p-4 order-last md:order-last float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         Empowering Young Innovators A Day of Design Thinking Exploration
       </div>
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 order-first md:order-first">
-        <img src="ourAchivementsImages/5.jpg" alt="" />
+        <img src="ourAchivementsImages/5.jpg" alt="" class="rounded-2xl"/>
       </div>
     </div>
 
@@ -749,9 +789,11 @@
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
       <div class="p-10 sm:p-10 md:p-20 lg:p-20 md:order-2 order-1">
-        <img src="ourAchivementsImages/3.jpg" alt="" />
+        <img src="ourAchivementsImages/3.jpg" alt="" class="rounded-2xl"/>
       </div>
-      <div class="leading-loose text-lg md:order-1 order-2 float-left mr-4 mb-4 mx-12 mt-48 font-bold">
+      <div
+        class="leading-loose text-sm lg:text-xl md:order-1 order-2 float-left lg:mr-4 mb-4 mx-8 lg:mx-12 lg:mt-48 font-bold"
+        style="text-align: justify;">
         "Breaking Boundaries Fueling Future Innovators! Malnad College of
         Engineering Soars to NIRF Innovation Rankings, Claiming a Spot in the
         Top rank-band of 101-150! "This incredible feat reflects the tireless
@@ -765,7 +807,8 @@
       </div>
     </div>
   </div>
-
+  <br>
+  <br>
   <!-- <hr class="border-t-2 border-gray-400 my-4" />
 
     <p class="text-2xl text-center py-10">Robosoccer</p>
@@ -804,7 +847,10 @@
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="assets/NavbarCode/assets/js/main.js"></script>
   <script>
+
+
 
 
     // function clickFunction(e) {
