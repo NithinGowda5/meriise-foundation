@@ -264,7 +264,7 @@
                                       </li>
     
                                       <li>
-                                          <a href="#"   class="dropdown__sublink">
+                                          <a href="#" class="dropdown__sublink">
                                               <i class="ri-refund-2-line"></i> Refunds
                                           </a>
                                       </li>
@@ -353,8 +353,10 @@
 
 
                 <!-- -----------------------------------Expenturdite------------------ -->
-                <br>
-                <!-- <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+                
+<!-- Origin code -->
+                <!-- <br>
+                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-around">
                         <img class="sm:m-5" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
                         <img class="sm:m-5" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
@@ -373,54 +375,53 @@
 
                 </div> -->
 
-                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
-    <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] justify-around">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
-    </div>
+                <br>
+<div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+    <div class="bg-gray-200 h-[40vh] lg:h-[50vh] relative overflow-hidden">
+        <!-- Large Screens: Side-by-Side Images -->
+        <div class="hidden sm:flex w-full justify-around">
+            <img class="sm:m-5 w-1/2 h-full object-contain" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
+            <img class="sm:m-5 w-1/2 h-full object-contain" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
+        </div>
 
-    <!-- Small & Medium Screens: Image Slider -->
-    <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
-            </div>
+        <!-- Small Screens: Auto-Sliding Images -->
+        <div class="sm:hidden absolute flex w-full h-full transition-transform duration-700 ease-in-out whitespace-nowrap" id="imageSlider7">
+            <img class="w-full h-full object-contain flex-shrink-0" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
+            <img class="w-full h-full object-contain flex-shrink-0" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
         </div>
     </div>
-
     <br><br>
     <div class="text-3xl">
-        <p>Expenditure & Clarification Meeting</p>
+        <p>Expenditure & clarification meeting</p>
     </div>
     <p class="text-xl">9th of January 2025</p>
-    <p>Discussion on the utilization of OPEX grants and Utilization Certificate Preparation.</p>
+    <p>Discussion on the utilization of OPEX grants.  
+        <br>Discussion on Utilization Certificate Preparation.
+    </p>
 </div>
 
 <script>
-    // JavaScript for automatic image slider
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.getElementById("slider");
+    if (window.innerWidth < 640) { // Only apply slider for small screens
+        const slider = document.getElementById("imageSlider7");
         let index = 0;
-        const totalSlides = slider.children.length;
 
-        setInterval(() => {
-            index = (index + 1) % totalSlides;
+        function slideImages() {
+            index = (index + 1) % 2; // Toggle between two images
             slider.style.transform = `translateX(-${index * 100}%)`;
-        }, 3000); // Change every 3 seconds
-    });
+        }
+
+        setInterval(slideImages, 3000); // Change image every 3 seconds
+    }
 </script>
 
 
 
 
-
                 <!-- -----------------------------------Smorphy Challenge------------------ -->
-                <br>
-                <!-- <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+
+<!-- Origin code -->
+                <!-- <br>
+                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-around">
                         <img class="sm:m-5" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
                         <img class="sm:m-5" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
@@ -443,49 +444,47 @@
 
                 </div> -->
 
-                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
-    <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] justify-around">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
-    </div>
 
-    <!-- Small & Medium Screens: Image Slider -->
-    <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
-            </div>
+                <br>
+<div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+    <div class="bg-gray-200 h-[40vh] lg:h-[50vh] relative overflow-hidden">
+        <!-- Large Screens: Side-by-Side Images -->
+        <div class="hidden sm:flex w-full justify-around">
+            <img class="sm:m-5 w-1/2 h-full object-contain" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
+            <img class="sm:m-5 w-1/2 h-full object-contain" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
+        </div>
+
+        <!-- Small Screens: Auto-Sliding Images (No Cropping) -->
+        <div class="sm:hidden absolute flex w-full h-full transition-transform duration-700 ease-in-out whitespace-nowrap" id="imageSlider4">
+            <img class="w-full h-full object-contain flex-shrink-0" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
+            <img class="w-full h-full object-contain flex-shrink-0" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
         </div>
     </div>
-
     <br><br>
     <div class="text-3xl">
         <p>Smorphi Imaginary</p>
     </div>
     <p class="text-xl">On 9th January 2025</p>
-    <p>MCE hosted an innovation robotics challenge, Smorphi Imaginary. This event aims to provide students with hands-on experience in advanced robotics.</p>
-    <br>
-    <p><b>Revanth Kumar G D</b> is the winner of the event.</p>
+    <p>MCE hosted an innovative robotics challenge, <b>Smorphi Imaginary</b>. This event provided students with hands-on 
+        experience in advanced robotics.  
+        <br><br>
+        <b>Revanth Kumar G D</b> emerged as the winner of the event.
+    </p>
 </div>
 
 <script>
-    // JavaScript for automatic image slider
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.getElementById("slider");
+    if (window.innerWidth < 640) { // Only apply slider for small screens
+        const slider = document.getElementById("imageSlider4");
         let index = 0;
-        const totalSlides = slider.children.length;
 
-        setInterval(() => {
-            index = (index + 1) % totalSlides;
+        function slideImages() {
+            index = (index + 1) % 2; // Toggle between two images
             slider.style.transform = `translateX(-${index * 100}%)`;
-        }, 3000); // Change every 3 seconds
-    });
-</script>
+        }
 
+        setInterval(slideImages, 3000); // Change image every 3 seconds
+    }
+</script>
 
 
 
@@ -520,6 +519,7 @@
 
 
                 <!-- -----------------------------------Shortlisted Projects------------------ -->
+<!-- Origin code -->
                 <!-- <br>
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white ">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex flex-wrap justify-between">
@@ -542,54 +542,46 @@
 
                 </div> -->
 
+
                 <br>
 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
-    <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] flex-wrap justify-between">
-        <img class="sm:m-5" src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
-        <img class="sm:m-5 " src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
-        <img class="sm:m-5 " src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
-        <img class="sm:m-5" src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
-    </div>
-
-    <!-- Small & Medium Screens: Image Slider -->
-    <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
-            </div>
+    <div class="bg-gray-200 h-[40vh] lg:h-[50vh] relative overflow-hidden">
+        <!-- Large Screens: Grid Layout -->
+        <div class="hidden sm:grid grid-cols-2 gap-4 w-full h-full">
+            <img class="w-full h-full object-cover" src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
+            <img class="w-full h-full object-cover" src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
+            <img class="w-full h-full object-cover" src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
+            <img class="w-full h-full object-cover" src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
+        </div>
+        
+        <!-- Small Screens: Auto-Sliding Images -->
+        <div class="sm:hidden absolute flex w-full h-full transition-transform duration-700 ease-in-out" id="imageSlider3">
+            <img class="w-full object-cover" src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
+            <img class="w-full object-cover" src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
+            <img class="w-full object-cover" src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
+            <img class="w-full object-cover" src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
         </div>
     </div>
-
     <br><br>
     <div class="text-3xl">
-        <p>Evaluation of Shortlisted projects under NAIN 2.0 by PMU</p>
+        <p>Evaluation of Shortlisted Projects under NAIN 2.0 by PMU</p>
     </div>
     <p class="text-xl">On 7th November 2024</p>
-    <p>Event conducted with 15 shortlisted teams.</p>
+    <p>The event was conducted with 15 shortlisted teams, showcasing their innovative solutions.</p>
 </div>
 
 <script>
-    // JavaScript for automatic image slider
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.getElementById("slider");
+    if (window.innerWidth < 640) { // Only apply slider for small screens
+        const slider = document.getElementById("imageSlider3");
         let index = 0;
-        const totalSlides = slider.children.length;
 
-        setInterval(() => {
-            index = (index + 1) % totalSlides;
+        function slideImages() {
+            index = (index + 1) % 4; // Rotate through 4 images
             slider.style.transform = `translateX(-${index * 100}%)`;
-        }, 3000); // Change every 3 seconds
-    });
+        }
+
+        setInterval(slideImages, 3000); // Change image every 3 seconds
+    }
 </script>
 
 
@@ -621,8 +613,10 @@
                 </div>
 
                 <!------------------- Innovate & Elevate – NAIN 2.0 Student Project Evaluation at NHI --------------------------->
-                <br>
-                <!-- <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+
+<!-- Origin  -->
+                <!-- <br> 
+                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh]  flex justify-around ">
                         <img class="sm:m-5" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
                         <img class="sm:m-5"  src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
@@ -646,47 +640,47 @@
                     </p>
 
 
-                </div>  -->
+                </div> -->
+
 
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
-    <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] justify-around">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
-        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
-    </div>
-
-    <!-- Small & Medium Screens: Image Slider -->
-    <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
-            </div>
-            <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
-            </div>
+    <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-around relative overflow-hidden">
+        <div class="hidden sm:flex w-full justify-around"> 
+            <!-- Side-by-side images for large screens -->
+            <img class="sm:m-5 w-full object-cover" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
+            <img class="sm:m-5 w-full object-cover" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
+        </div>
+        <div class="sm:hidden absolute flex w-full h-full transition-transform duration-700 ease-in-out" id="imageSlider">
+            <!-- Slider for small screens -->
+            <img class="w-full object-cover" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
+            <img class="w-full object-cover" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
         </div>
     </div>
-
     <br><br>
     <div class="text-3xl">
         <p>Meeting of the First Institution Level Innovation Council</p>
     </div>
     <p class="text-xl">On 30th of September 2024</p>
-    <p>The event was organized under the New Age Innovation Network 2.0 (NAIN 2.0), a flagship initiative by the Department of Electronics, IT, BT, Science & Technology, Government of Karnataka. A total of 26 student innovations were evaluated by a distinguished jury panel comprising experts from both industry and academia. As part of the NAIN 2.0 scheme, up to Rs. 5 lakh in funding will be provided for the top 10 promising projects, offering support to help bring these innovations to life.</p>
+    <p>The event was organized under the New Age Innovation Network 2.0 (NAIN 2.0), a flagship initiative by the 
+        Department of Electronics, IT, BT, Science & Technology, Government of Karnataka. A total of 26 student 
+        innovations were evaluated by a distinguished jury panel comprising experts from both industry and academia. 
+        As part of the NAIN 2.0 scheme, up to Rs. 5 lakh in funding will be provided for the top 10 promising projects, 
+        offering support to help bring these innovations to life.
+    </p>
 </div>
 
 <script>
-    // JavaScript for automatic image slider
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.getElementById("slider");
+    if (window.innerWidth < 640) { // Only run on small screens (sm:hidden elements)
+        const slider = document.getElementById("imageSlider");
         let index = 0;
-        const totalSlides = slider.children.length;
 
-        setInterval(() => {
-            index = (index + 1) % totalSlides;
+        function slideImages() {
+            index = (index + 1) % 2; // Toggle between images
             slider.style.transform = `translateX(-${index * 100}%)`;
-        }, 3000); // Change every 3 seconds
-    });
+        }
+
+        setInterval(slideImages, 3000); // Change image every 3 seconds
+    }
 </script>
 
             </div>
