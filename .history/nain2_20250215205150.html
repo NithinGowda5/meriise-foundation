@@ -333,7 +333,7 @@
                 <!-- ------------------------------------National Start Up Day------------------ -->
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-center">
-                        <img src="assets/NAIN/startup1.jpg" alt="National Startup day">
+                        <img class="sm:m-6" src="assets/NAIN/startup1.jpg" alt="National Startup day">
                     </div>
                     <br>
                     <br>
@@ -375,19 +375,19 @@
 
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
     <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[50vh] justify-around items-center overflow-hidden">
-        <img class="object-contain h-full max-w-[45%]" src="assets/NAIN/expend1.jpg" alt="Expenditure & Clarification Meeting">
-        <img class="object-contain h-full max-w-[45%]" src="assets/NAIN/expend2.jpg" alt="Expenditure & Clarification Meeting">
+    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] justify-around">
+        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
+        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
     </div>
 
     <!-- Small & Medium Screens: Image Slider -->
     <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-700 ease-in-out">
+        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
             <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/expend1.jpg" alt="Expenditure & Clarification Meeting">
+                <img class="w-full h-full object-cover" src="assets/NAIN/expend1.jpg" alt="Expenditure & clarification meeting">
             </div>
             <div class="w-full h-full flex-shrink-0">
-                <img class="w-full h-full object-cover" src="assets/NAIN/expend2.jpg" alt="Expenditure & Clarification Meeting">
+                <img class="w-full h-full object-cover" src="assets/NAIN/expend2.jpg" alt="Expenditure & clarification meeting">
             </div>
         </div>
     </div>
@@ -401,24 +401,18 @@
 </div>
 
 <script>
-    // JavaScript for automatic image slider (works for small & medium screens)
+    // JavaScript for automatic image slider
     document.addEventListener("DOMContentLoaded", function () {
         const slider = document.getElementById("slider");
+        let index = 0;
+        const totalSlides = slider.children.length;
 
-        if (slider) {
-            let index = 0;
-            const totalSlides = slider.children.length;
-
-            function moveSlider() {
-                index = (index + 1) % totalSlides;
-                slider.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            setInterval(moveSlider, 3000); // Change every 3 seconds
-        }
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000); // Change every 3 seconds
     });
 </script>
-
 
 
 
@@ -449,16 +443,16 @@
 
                 </div> -->
 
-<div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
+                <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
     <!-- Large Screens: Static Images -->
-    <div class="hidden lg:flex bg-gray-200 h-[50vh] justify-around items-center overflow-hidden">
-        <img class="object-contain h-full max-w-[45%]" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
-        <img class="object-contain h-full max-w-[45%]" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
+    <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] justify-around">
+        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
+        <img class="sm:m-5 object-contain h-full" src="assets/NAIN/smorphi2.png" alt="Smorphi Imaginary">
     </div>
 
     <!-- Small & Medium Screens: Image Slider -->
     <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
-        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-700 ease-in-out">
+        <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
             <div class="w-full h-full flex-shrink-0">
                 <img class="w-full h-full object-cover" src="assets/NAIN/smorphi1.png" alt="Smorphi Imaginary">
             </div>
@@ -479,25 +473,18 @@
 </div>
 
 <script>
-    // JavaScript for automatic image slider (works for small & medium screens)
+    // JavaScript for automatic image slider
     document.addEventListener("DOMContentLoaded", function () {
         const slider = document.getElementById("slider");
+        let index = 0;
+        const totalSlides = slider.children.length;
 
-        if (slider) {
-            let index = 0;
-            const totalSlides = slider.children.length;
-
-            function moveSlider() {
-                index = (index + 1) % totalSlides;
-                slider.style.transform = `translateX(-${index * 100}%)`;
-            }
-
-            setInterval(moveSlider, 3000); // Change every 3 seconds
-        }
+        setInterval(() => {
+            index = (index + 1) % totalSlides;
+            slider.style.transform = `translateX(-${index * 100}%)`;
+        }, 3000); // Change every 3 seconds
     });
 </script>
-
-
 
 
 
@@ -507,7 +494,7 @@
                 <br>
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-center">
-                        <img  src="assets/NAIN/global1.jpg" alt="TiE Global Summit">
+                        <img class="sm:m-5" src="assets/NAIN/global1.jpg" alt="TiE Global Summit">
                     </div>
                     <br>
                     <br>
@@ -559,10 +546,10 @@
 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
     <!-- Large Screens: Static Images -->
     <div class="hidden lg:flex bg-gray-200 h-[40vh] lg:h-[50vh] flex-wrap justify-between">
-        <img  src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
-        <img  src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
-        <img  src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
-        <img  src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
+        <img class="sm:m-5" src="assets/NAIN/eval1.jpg" alt="Shortlisted projects">
+        <img class="sm:m-5 " src="assets/NAIN/eval3.jpg" alt="Shortlisted projects">
+        <img class="sm:m-5 " src="assets/NAIN/eval2.jpg" alt="Shortlisted projects">
+        <img class="sm:m-5" src="assets/NAIN/eval4.jpg" alt="Shortlisted projects">
     </div>
 
     <!-- Small & Medium Screens: Image Slider -->
@@ -611,7 +598,7 @@
                 <br>
                 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
                     <div class="bg-gray-200 h-[40vh] lg:h-[50vh] flex justify-center">
-                        <img  src="assets/NAIN/innovate1.jpg" alt="Student Project Evaluation">
+                        <img class="sm:m-5" src="assets/NAIN/innovate1.jpg" alt="Student Project Evaluation">
                     </div>
                     <br>
                     <br>
@@ -664,11 +651,11 @@
 <div style="text-align: justify;" class="text-sm m-6 rounded-2xl p-10 bg-white">
     <!-- Large Screens: Static Images -->
     <div class="hidden lg:flex bg-gray-200 h-[50vh] justify-around items-center overflow-hidden">
-        <img class=" object-contain h-full max-w-[45%]" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
-        <img class="object-contain h-full max-w-[45%]" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
+        <img class="sm:m-5 object-contain h-full max-w-[45%]" src="assets/NAIN/meet1.jpg" alt="First Meeting of IIC">
+        <img class="sm:m-5 object-contain h-full max-w-[45%]" src="assets/NAIN/meet2.jpg" alt="First Meeting of IIC">
     </div>
 
-    <!-- Small & Medium Screens: Image Slider -->
+    <!-- Small & Medium Screens: Image Slider (Full Image Fill) -->
     <div class="lg:hidden relative w-full bg-gray-200 h-[40vh] sm:h-[50vh] overflow-hidden">
         <div id="slider" class="absolute top-0 left-0 w-full h-full flex transition-transform duration-500 ease-in-out">
             <div class="w-full h-full flex-shrink-0">
@@ -701,11 +688,10 @@
                 slider.style.transform = `translateX(-${index * 100}%)`;
             }
 
-            setInterval(moveSlider, 3000); // Change every 3 seconds
+            setInterval(moveSlider, 2000); // Change every 3 seconds
         }
     });
 </script>
-
 
 
 
