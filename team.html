@@ -30,6 +30,34 @@
       text-decoration: none;
     }
 
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+
+    .icon {
+      text-decoration: none;
+      border-bottom: none;
+      position: relative;
+    }
+
+    .image {
+      width: 272px;
+      height: 350px;
+    }
+
+    #box2 {
+      z-index: 1; a:link {
+      text-decoration: none;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+
     .icon {
       text-decoration: none;
       border-bottom: none;
@@ -43,6 +71,12 @@
 
     #box2 {
       z-index: 1;
+    }
+
+    header {
+      box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
+    }
+
     }
 
     header {
@@ -248,11 +282,11 @@
                   </div>
 
                   <ul class="dropdown__submenu">
-                    <li>
+                    <!-- <li>
                       <a href="#" class="dropdown__sublink">
                         <i class="ri-file-list-line"></i>Board of Directors
                       </a>
-                    </li>
+                    </li> -->
 
                     <li>
                       <a href="faculty.html" class="dropdown__sublink">
@@ -443,746 +477,458 @@
       </div> -->
   </div>
   <div class="newwarp">
-    <h1 class="text-4xl">Office Bearers</h1>
+    <h1 class="text-4xl m-4 p-5">Office Bearers</h1>
     <!-- <h2>Meet The Heart Of Our Team!</h2>  -->
     <div class="container">
       <!--<div class="row clearfix">-->
 
-      <div class="container-fluid std">
-        <!-- <div class="line"></div> -->
-        <div>
-          <!--<h6>1111Final year student members</h6>-->
-          <h6>Final Year Student Members</h6>
-        </div>
-        <!-- <div class="line"></div> -->
-      </div>
-      <div class="row clearfix">
 
-        <!-------------------------------------------------------------------------4th years--------------------------------------------------------------->
 
-        <!-- <div class="container-fluid std">
-            <div class="line"></div>
-            <div>
-              <h6>4th Year Student Members</h6>
+
+
+
+
+      <div class="bg-gray-200 p-6 min-h-screen">
+        <div class="max-w-6xl mx-auto text-center">
+
+          <h2 class="text-2xl text-gray-800 m-10">Final Year Students</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Student Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="animal.webp" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Mohammed Fahad Khan</h2>
+              <p class="text-gray-600 text-sm">Mechanical Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Executive Lead</p>
             </div>
-            <div class="line"></div>
-          </div> -->
 
-        <!-- team block1 -->
-
-        <div class="lg:grid grid-cols-3">
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Fahadnew.jpg" class="image" style="background-size: contain" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Mohammed Fahad Khan</a>
-                </h3>
-                <div class="designation">Executive Lead</div>
-                <div class="branch">Mechanical Engg.</div>
-              </div>
+            <!-- Student Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="boy.avif" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Anagha B S</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Executive & H R Lead</p>
             </div>
+
+            <!-- Student Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="doremon.jpg" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">P Pratheeka Ganapathi</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Executive & Digital Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Startup & Research Lead</p>
+            </div>
+
+            <!-- Student Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Chaithanya S L</h2>
+              <p class="text-gray-600 text-sm">Electronics & Electrical Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Executive & Finance Lead</p>
+            </div>
+
+            <!-- Student Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Darshan Shetty</h2>
+              <p class="text-gray-600 text-sm">Electronics and Instrumentation Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Planning Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Marketing & UBA Lead</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Hemanth S</h2>
+              <p class="text-gray-600 text-sm">Civil Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Planning, Digital & Design Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Startup & Research Lead</p>
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Arjun H</h2>
+              <p class="text-gray-600 text-sm">Civil Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Budget and Creative Lead</p>
+            </div>
+
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Tejaswini A S</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Budget and Creative Lead</p>
+            </div>
+
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Harshini N D</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Editorial Lead</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Rumaan Sharief N</h2>
+              <p class="text-gray-600 text-sm">Civil Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Editorial Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Startup & Research Lead</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Sinchana M G</h2>
+              <p class="text-gray-600 text-sm">Electronics & Communication Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Editorial Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Social Media & Broadcast Lead</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">H G Pratheek Gowda</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Technical Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Social Media & Broadcast Lead</p> -->
+            </div>
+
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Thejaswini M D</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Technical Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Social Media & Broadcast Lead</p> -->
+            </div>
+
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Prajwal Kumbar H M</h2>
+              <p class="text-gray-600 text-sm">Electronics & Communication Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Digital Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Social Media & Broadcast Lead</p> -->
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Ayesha Zameer</h2>
+              <p class="text-gray-600 text-sm">Electrical & Electronics Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Database Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Social Media & Broadcast Lead</p> -->
+            </div>
+
+
+
+
+
+
+
+
           </div>
-
-
-
-
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Anagha B S.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Anagha B S</a>
-                </h3>
-                <div class="designation">Executive & H R Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/PratheekaGanapathinew.png" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">P Pratheeka Ganapathi</a>
-                </h3>
-                <div class="designation">Executive & Digital Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-                <div class="branch">Information Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Chaithanyanew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Chaithanya S L</a>
-                </h3>
-                <div class="designation">Executive & Finance Lead</div>
-                <div class="branch">Electronics & Electrical Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Darshan shetty.jpeg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Darshan Shetty</a>
-                </h3>
-                <div class="designation">Planning Lead</div>
-                <div class="designation">Marketing & UBA Lead</div>
-                <div class="branch">Electronics and Instrumentation Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Hemanth S.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Hemanth S</a>
-                </h3>
-                <div class="designation">Planning, Digital & Design Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-                <div class="branch">Electronics and Instrumentation Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- team block2 -->
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Arjun H.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Arjun H</a>
-                </h3>
-                <div class="designation">Budget and Creative Lead</div>
-                <div class="designation">Marketing & UBA Lead</div>
-                <div class="branch">Civil Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Tejaswini A S.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Tejaswini A S</a>
-                </h3>
-                <div class="designation">Budget and Creative Lead</div>
-                <div class="branch">Information Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Harshininew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Harshini N D</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Rumaan Sharief N.JPG" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Rumaan Sharief N</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="designation">Startup & Research Lead</div>
-
-                <div class="branch">Civil Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/SinchanaMGnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Sinchana M G</a>
-                </h3>
-                <div class="designation">Editorial Lead</div>
-                <div class="designation">Social Media & Broadcast Lead</div>
-                <div class="branch">Electronics & Communication Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6 bg-cover">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="./assets/Pratheek Gowda.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">H G Pratheek Gowda</a>
-                </h3>
-                <div class="designation">Technical Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/ThejaswiniMDnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Thejaswini M D</a>
-                </h3>
-                <div class="designation">Technical Lead</div>
-                <div class="branch">Computer Science Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Prajwalnew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Prajwal Kumbar H M</a>
-                </h3>
-                <div class="designation">Digital Lead</div>
-                <div class="branch">Electronics & Communication Engg.</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-
-
-
-          <!-- team block3 -->
-
-          <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Ayeshanew.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Ayesha Zameer</a>
-                </h3>
-                <div class="designation">Database Lead</div>
-                <div class="branch">Electrical and Electronics Engg</div>
-              </div>
-            </div>
-          </div>
-
-
-
-
-
-
-        </div>
-
-
-
-
-        <div class="container-fluid std">
           <br>
           <br>
+          <div class="bg-white h-1"></div>
+
+          <h2 class="text-2xl text-gray-800 m-10">3rd Year Students</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Student Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="animal.webp" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">>Aditya M</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Digital and Design Sub Lead</p>
+            </div>
+
+            <!-- Student Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="boy.avif" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Amith Subodh</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Digital & Design Sub Lead</p>
+              <p class="text-blue-600 font-medium text-lg">External Sub Lead</p>
+            </div>
+
+            <!-- Student Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="doremon.jpg" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Aviksha Kavya Gowda</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Editorial Sub Lead</p>
+            </div>
+
+            <!-- Student Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Chinmayee Chougale</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Sreative Sub Lead</p>
+            </div>
+
+            <!-- Student Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Kushi Gurumurthy</h2>
+              <p class="text-gray-600 text-sm">Electronics and Communication Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Database Sub Lead</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Nithin Gowda M T</h2>
+              <p class="text-gray-600 text-sm">Digital and Design Sub Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Computer Science and Business Systems Engg.</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Pragna C P</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Social Media Handling &</p>
+              <p class="text-blue-600 font-medium text-lg">UBA Sub Lead</p>
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Shravani G</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">HR Sub Lead</p>
+              <p class="text-blue-600 font-medium text-lg">Creative Sub Lead</p>
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Tejas Yogesh</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Technical Sub Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Creative Sub Lead</p> -->
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Veerendra G Adoor</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Technical Sub Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Creative Sub Lead</p> -->
+
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Yallappagouda Patil</h2>
+              <p class="text-gray-600 text-sm">Information Science Engg.</p>
+              <p class="text-blue-600 font-medium text-lg">Database Sub Lead</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Creative Sub Lead</p> -->
+
+            </div>
+
+
+          </div>
+
           <br>
-          <!-- <div class="line"></div> -->
-          <div>
-            <!--<h6>1111Final year student members</h6>-->
+          <br>
+          <div class="bg-white h-1"></div>
 
+          <h2 class="text-2xl text-gray-800 m-10">2nd Year Students</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Student Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="animal.webp" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown 1</h2>
+              <p class="text-gray-600 text-sm">Computer Science</p>
+              <p class="text-blue-600 font-medium text-lg">Executive Lead</p>
+            </div>
 
-            <br>
-            <br>
-            
-            <hr>
-            <br>
-            <!-- ------------------------------------------------------------------------------3rd Years Members ---------------------------------------------------------------------------------- -->
-            <h6 class="m-10">3rd Year Student Members</h6>
-          </div>
-          <!-- <div class="line"></div> -->
-        </div>
-        <div class="row clearfix">
+            <!-- Student Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="boy.avif" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown 2</h2>
+              <p class="text-gray-600 text-sm">Information Technology</p>
+              <p class="text-blue-600 font-medium text-lg">Technical Lead</p>
+            </div>
 
+            <!-- Student Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="doremon.jpg" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown 3</h2>
+              <p class="text-gray-600 text-sm">Mechanical Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Editorial Lead</p>
+            </div>
 
-          <div class="lg:grid grid-cols-3">
+            <!-- Student Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown5 Johnson</h2>
+              <p class="text-gray-600 text-sm">Electrical Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Embedded Systems Engineer</p>
+            </div>
 
+            <!-- Student Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown6</h2>
+              <p class="text-gray-600 text-sm">Civil Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Structural Engineer</p>
+            </div>
 
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/adi.JPG" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Aditya M</a>
-                  </h3>
-                  <div class="designation">Digital and Design Sub Lead</div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown6</h2>
+              <p class="text-gray-600 text-sm">Civil Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Structural Engineer</p>
             </div>
 
 
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/amith.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Amith Subodh</a>
-                  </h3>
-                  <div class="designation">Digital and Design Sub Lead</div>
-                  <div class="designation">External Sub Lead </div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Unknown6</h2>
+              <p class="text-gray-600 text-sm">Civil Engineering</p>
+              <p class="text-blue-600 font-medium text-lg">Structural Engineer</p>
             </div>
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/aviksha.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Aviksha Kavya Gowda</a>
-                  </h3>
-                  <div class="designation">Editoral Sub Lead</div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/chinmayee.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Chinmayee Chougale</a>
-                  </h3>
-                  <div class="designation">Creative Sub Lead</div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/kushi.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Kushi Gurumurthy</a>
-                  </h3>
-                  <div class="designation">Database Sub Lead</div>
-                  <div class="branch">Electronics and Communication Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/nithin.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Nithin Gowda M T</a>
-                  </h3>
-                  <div class="designation">Digital and Design Sub Lead</div>
-                  <div class="branch">
-                    Computer Science and Business Systems Engg.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/pragna.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Pragna C P</a>
-                  </h3>
-                  <div class="designation">Social Media Handling &</div>
-                  <div class="designation">UBA Sub Lead</div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/rifa.jpg" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Rifa Mariyam</a>
-                </h3>
-                <div class="designation">Editorial Sub Lead</div>
-                <div class="branch">Electronics & Electrical Engg.</div>
-              </div>
-            </div>
-          </div> -->
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/shravani.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Shravani G</a>
-                  </h3>
-                  <div class="designation">HR Sub Lead</div>
-                  <div class="designation">Creative Sub Lead</div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/tejas.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Tejas Yogesh</a>
-                  </h3>
-                  <div class="designation">Technical Sub Leading</div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/veerandra.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Veerendra G Adoor</a>
-                  </h3>
-                  <div class="designation">Technical Sub Lead</div>
-                  <div class="branch">Computer Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-            <div class="team-block col-sm-12 col-lg-4 col-md-6">
-              <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">
-                <div class="image">
-                  <a href="#"></a>
-                  <img src="assets/yallappa.jpg" class="image" />
-                </div>
-                <div class="lower-content">
-                  <h3>
-                    <a href="#">Yallappagouda Patil</a>
-                  </h3>
-                  <div class="designation">Database Sub Lead</div>
-                  <div class="branch">Information Science Engg.</div>
-                </div>
-              </div>
-            </div>
-
 
 
           </div>
 
+          <br>
+          <br>
+          <div class="bg-white h-1"></div>
 
-
-          <!-- team block16 -->
-          <!-- <div class="team-block col-sm-12 col-lg-4 col-md-6">
-            <div
-              class="inner-box wow fadeInLeft"
-              data-wow-delay="0ms"
-              data-wow-duration="150ms"
-            >
-              <div class="image">
-                <a href="#"></a>
-                <img src="assets/Vishwas R Kashyap.JPG" class="image" />
-              </div>
-              <div class="lower-content">
-                <h3>
-                  <a href="#">Vishwas R Kashyap</a>
-                </h3>
-                <div class="designation">Digital Sub Head</div>
-                <div class="branch">CSE</div>
-              </div>
+          <h2 class="text-2xl text-gray-800 m-10">1st Year Students</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <!-- Student Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="animal.webp" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Aisha Namra</h2>
+              <p class="text-gray-600 text-sm">Information Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Executive Lead</p> -->
             </div>
-          </div> -->
-          <!-- team block17
-           <div class="team-block  col-sm-12 col-lg-4 col-md-6  ">
-               <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">                     
-                    <div class="image">
-                         <a href="#"></a>
-                         <img src="assets/.jpg">
-                   </div> 
-                   <div class="lower-content">
-                       <h3>
-                           <a href="#"></a>
-                       </h3>
-                       <div class="designation">Sub Head</div>
-                       <div class="branch"> CSE</div>
-                  </div>  
-             </div>   
-        </div> -->
-          <!-- team block13
-<div class="team-block  col-sm-12 col-lg-4 col-md-6  ">
-     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">                     
-          <div class="image">
-               <a href="#"></a>
-               <img src="assets/Sudarshan M G.jpeg">
-         </div> 
-         <div class="lower-content">
-             <h3>
-                 <a href="#">Sudarshan M G</a>
-             </h3>
-             <div class="designation">Technical sub head</div>
-             <div class="branch">ISE</div>
-        </div>  
-   </div>   
-</div> -->
-          <!-- team block14-->
-          <!-- <div class="team-block  col-sm-12 col-lg-4 col-md-6  ">
-     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">                     
-          <div class="image">
-               <a href="#"></a>
-               <img src="assets/Anagha Dixith N.jpg">
-         </div> 
-         <div class="lower-content">
-             <h3>
-                 <a href="#">Anagha Dixith N</a>
-             </h3>
-             <div class="designation">Technical Sub Head</div>
-             <div class="branch">CSE</div>
-        </div>  
-   </div>   
-</div>  -->
-          <!-- team block15-->
-          <!-- <div class="team-block  col-sm-12 col-lg-4 col-md-6  ">
-     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">                     
-          <div class="image">
-               <a href="#"></a>
-               <img src="assets/Sowmya N C.jpg">
-         </div> 
-         <div class="lower-content">
-             <h3>
-                 <a href="#">Sowmya N C</a>
-             </h3>
-             <div class="designation">Assistant UBA Coordinator</div>
-             <div class="branch">EEE</div>
-        </div>  
-   </div>   
-</div>  -->
 
-          <!-- 
-<div class="team-block  col-sm-12 col-lg-4 col-md-6  ">
-     <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="150ms">                     
-          <div class="image">
-               <a href="#"></a>
-               <img src="assets/Vikas Bhat.jpg">
-         </div> 
-         <div class="lower-content">
-             <h3>
-                 <a href="#">Vikas Bhat</a>
-             </h3>
-             <div class="designation">Database sub head</div>
-             <div class="branch">ME</div>
-        </div>  
-   </div>   
-</div>  -->
+            <!-- Student Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="boy.avif" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Ananya G S</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Technical Lead</p> -->
+            </div>
+
+            <!-- Student Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="doremon.jpg" alt="Student Image" class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Aniruddha Bhat</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Editorial Lead</p> -->
+            </div>
+
+            <!-- Student Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Chinmayi D</h2>
+              <p class="text-gray-600 text-sm">Information Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Embedded Systems Engineer</p> -->
+            </div>
+
+            <!-- Student Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Chirag P</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Darshan S</h2>
+              <p class="text-gray-600 text-sm">Computer Science & Business Systems</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Harshitha R</h2>
+              <p class="text-gray-600 text-sm">Electronics & Communication Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Keerthan A</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Kishan B Gowda</h2>
+              <p class="text-gray-600 text-sm">Computer Science Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg card hover:shadow-xl">
+              <img src="https://via.placeholder.com/150" alt="Student Image"
+                class="w-full h-80 object-cover rounded-md">
+              <h2 class="text-xl font-semibold mt-3 text-gray-900">Likith Gowda YJ</h2>
+              <p class="text-gray-600 text-sm">Electronics & Communication Engineering</p>
+              <!-- <p class="text-blue-600 font-medium text-lg">Structural Engineer</p> -->
+            </div>
+
+
+          </div>
         </div>
       </div>
+
+
+
     </div>
 
     <!-- Footer -->
