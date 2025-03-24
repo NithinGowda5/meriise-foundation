@@ -4191,7 +4191,7 @@
 					right: 0;
 					bottom: 0;
 					left: 0;
-					width: 50%;
+					/* width: 50%; */
 					height: 1px;
 					background-color: rgba(255, 255, 255, 0.65);
 				}
