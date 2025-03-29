@@ -32,12 +32,14 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/NavbarCode/assets/css/styles.css">
+    <link rel="stylesheet" href="SliderMain/slider.css">
+    <link rel="stylesheet" href="SliderMain/slider.js">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 
 
-
+       
 
         .main {
             text-align: center;
@@ -1021,13 +1023,57 @@
     <!--  ml-[80px]  h-32 mt-[30px] ml-[80px] md:h-48 text-center-->
     <!-- button : wrong text-right text-2xl text-blue-700 m-0 md:m-4 -->
 
+    <div class="flex items-center justify-center h-[60%]">
+        <div class="relative w-[100vw] overflow-hidden rounded-lg">
+            <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+            <div class="flex transition-transform duration-500 ease-in-out" id="slider">
+                <div class="w-full flex-shrink-0">
+                    <img src="assets/RollingSlider/rgepnew.png" class="w-full h-[90vh]" alt="Slide 1">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="assets/RollingSlider/pmp.png" class="w-full h-[90vh]" alt="Slide 2">
+                </div>
+                <div class="w-full flex-shrink-0">
+                    <img src="assets/RollingSlider/chathurpravthan.png" class="w-full h-[90vh]" alt="Slide 3">
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 
-    <section class="banner full">
 
 
-        <!-- <article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="banner full"> -->
+
+
+    <!-- <article>
 
             <img src="images/iic.jpg" alt="" />
             <div class="inner">
@@ -1037,7 +1083,7 @@
 
 
 
-        <!-- <article>
+    <!-- <article>
 
             <img src="images/nain.jpg" alt="" />
             <div class="inner">
@@ -1046,7 +1092,7 @@
         </article> -->
 
 
-        <!-- 
+    <!-- 
 
         <article>
 
@@ -1062,7 +1108,7 @@
 
 
 
-        <!-- 
+    <!-- 
         <article>
 
             <img src="images/Banner.jpg" alt="" />
@@ -1071,7 +1117,7 @@
             </div>
         </article> -->
 
-        <!-- 
+    <!-- 
         <article>
 
             <img src="images/mce_gate.jpg" alt="" />
@@ -1084,12 +1130,12 @@
 
 
 
-        <!-- <article class="h-full">
+    <!-- <article class="h-full">
 
             <img src="assets/RollingSlider/rgepnew.png" alt="" class="h-[50%]" />
 
         </article> -->
-        <!-- <article>
+    <!-- <article>
 
             <img src="assets/Chathurprarvathan/chathurpravthan.png" alt="" />
             <div class="inner">
@@ -1097,7 +1143,7 @@
             </div>
         </article> -->
 
-        <article>
+    <!-- <article>
 
             <img src="assets/RollingSlider/pmp.png" alt="" />
             <div class="inner">
@@ -1118,12 +1164,12 @@
             <div class="inner">
                 <header></header>
             </div>
-        </article>
+        </article> -->
 
 
 
 
-        <!-- <article>
+    <!-- <article>
 
             <img src="images/g8.jpg" alt="" />
             <div class="inner">
@@ -1133,7 +1179,7 @@
 
 
 
-        <article>
+    <!-- <article>
 
             <img src="images/bootcamp1.jpg" alt="" />
             <div class="inner">
@@ -1171,9 +1217,9 @@
                     </p>
                 </header>
             </div>
-        </article>
+        </article> -->
 
-    </section>
+    <!-- </section> -->
 
     <!-- <div class="h-[70vh] bg-black">
         Hello
@@ -2637,6 +2683,19 @@
 
     </footer>
     <!-- Scripts -->
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('#slider > div');
+        const totalSlides = slides.length;
+        const slider = document.getElementById('slider');
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(nextSlide, 2000);
+    </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
